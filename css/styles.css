@@ -1,0 +1,14 @@
+body {
+	background-color: #999;
+}
+
+.container {
+	max-width: 80%;
+	border: 1px solid #eee;
+	background-color: #fff;
+	padding-bottom: 5em;
+}
+
+label {
+	margin-left: 1em;
+}
