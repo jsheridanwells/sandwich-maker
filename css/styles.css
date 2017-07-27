@@ -12,3 +12,12 @@ body {
 label {
 	margin-left: 1em;
 }
+
+select {
+	width: 100%;
+	font-size: 1.5em;
+}
+
+li {
+	font-size: 1.8em;
+}
