@@ -1,13 +1,24 @@
-let checks = document.getElementsByTagName('input');
 
-const getIngredient = () => {
-	console.log("ingredient", this.name);
-	return this.name;
-};
+let options = Array.from(document.getElementsByTagName('option'));
+let ingredientsList = document.getElementById('ingredients-list');
+let totalPrice = document.getElementById('total-price');
 
-for (let i = 0; i < checks.length; i++) {
-	checks[i].addEventListener('click', getIngredient);
+//listen for ingredients selected
+for (let i = 0; i < options.length; i++) {
+	options[i].addEventListener('click', function(){
+		let value = this.value;
+		//check to see if it is meat, bread, cheese, etc. 
+	});
 }
+
+
+//get total list of ingredients
+//use for each to print to the page
+
+//get total price
+//print total price to the price field.
+
+
 
 // 1.  when the user selects an ingredient
 //   1.1 capture the name of the ingredient

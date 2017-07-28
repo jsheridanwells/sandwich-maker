@@ -1,18 +1,16 @@
-// This SandwichMaker IIFE augments the original one
-var SandwichMaker = (function(maker) {
-
-  // Private variable to store the different meat prices
-  var meatPrices = {
-		'ham': 1.00,
-		'turkey': 1.00,
-		'chicken': 2.00
-	};
-
-  // Augment the original object with another method
-  maker.addMeat = (item) => {
-  	return meatPrices[item];
+var SandwichMaker = function(maker) {
+  //store ingredients and prices as key:value pairs
+  var meats = {
+    'ham': 1,
+    'turkey': 1.5,
+    'chicken': 1
   };
 
-  // Return the new, augmented object with the new method on it
+  //getter function to pass prices to totalPrice variable
+  //getter function to pass items to the ingredients array
+  maker.addMeat = function (meat) {
+      let meatPrice = meats[meat];
+      SandwichMaker.addToPrice(price);
+  };
   return maker;
-})(SandwichMaker);
+}(SandwichMaker);

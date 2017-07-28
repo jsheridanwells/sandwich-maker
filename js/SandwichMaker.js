@@ -1,12 +1,15 @@
-var SandwichMaker = (function() {
-
-  // Private variable to store the price
-  var totalPrice = 0;
-
-  // Return the public interface that other code can interact with
-  return {
-    addTopping: function(toppingPrice) {
-      totalPrice += toppingPrice;
-    }
-  };
-})();
+var SandwichMaker = function() {
+	var price = 0;  //hold the total price in a variable
+	var ingredients = [];//hold the ingredients in an array
+	return {
+		addToPrice: function(myPrice) {
+			price += myPrice;
+		},
+		getPrice: function() {   //return price and...
+			return price;
+		},
+		getIngredients: function() {  //... ingredients to the dom
+			return ingredients;
+		}
+	};
+}();
